@@ -1,0 +1,221 @@
+<!--Ricardo Peres Teixeira Ponciano - SC3011488-->
+<!--Esta pagina consiste em um formulario que representa a inscrição de um atleta em uma competição-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Natação</title>
+        <link rel="icon" href="nataçao-rio2016.png">
+        <style>
+            #topo {
+                background-color:lightblue;
+                height: auto;
+            }
+            #logo {
+                width: 250px;
+                margin-left: 18px;
+                height: auto;
+            }
+            #navbar{
+                background-color: lightseagreen;
+            }
+            #listaNav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:rgba(29, 32, 207, 0.685);
+            }
+            .navitem {  
+                display: inline-block;
+                padding: 14px 16px;
+                background-color: rgb(63, 66, 207);
+                border-right: 1px solid #bbb;
+            }
+            .navitem a {   
+                color: white;              
+                text-decoration: none;
+            }
+            .navitem:hover {
+                background-color: turquoise;
+            }
+            #sobre {
+                float: right;
+                border-right: none ;
+                border-left: 1px solid #bbb;
+            }
+            #rodape {
+                background-color: lightseagreen;
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                align-items: center;
+            }
+            #infos {
+                width: 45%;
+                margin-left: 10px;
+            }
+            #paginas {
+                width: 45%;
+                justify-content: center;
+            }
+            #listaRoda{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:lightseagreen
+            }
+            .rodaitem {
+                display: inline-block;
+                padding: 14px 16px;
+                background-color: lightseagreen;
+                border-right: 1px solid #bbb;
+            }
+            .rodaitem a {
+                color: white;
+                text-decoration: none;
+            }
+            #imgroda {
+                width: 10%;
+                justify-content: right;
+            }
+            #logoroda {
+                height: 80px;
+                width: auto;
+            }
+            #corpo0 {
+                height: auto;
+                background-color: lightblue;
+            }
+            #titulo {
+                text-align: center;
+            }
+            #corpo {
+                height: auto;
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+                font-size: large;
+            }
+            #formulario{
+                align-content: center;
+            }
+            .itemForm {
+                background-color: lightseagreen;
+            }
+            .botao {
+                background-color: lightseagreen;
+                border: none;
+                color: white;
+                padding: 10px 22px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="topo">
+            <div id="imgTopo">
+                <a href="pfpg1.html"><img id="logo" src="nataçao-rio2016.png" alt=""></a>
+            </div>
+            <nav id="navbar">
+                <ul id="listaNav">
+                    <li class="navitem"><a href="pfpg1.html">Home</a></li>
+                    <li class="navitem"><a href="pfpg2.html">História</a></li>
+                    <li class="navitem"><a href="pfpg3.html">Inscrição</a></li>
+                    <li class="navitem" id="sobre"><a href="#rodape">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id='corpo0'>
+            <h2 id="titulo">Inscrição para uma competição.</h2>
+        </div>
+        <div id="corpo">
+            <div id="formulario">
+                <form action="submit">
+                    <p>Nome do atleta</p>
+                    <input type="text" required class="itemForm">
+                    <br>
+                    <p>Clube/Time/Seleção do atleta</p>
+                    <input type="text" required class="itemForm">
+                    <br>
+                    <p>Sexo do atleta</p>
+                    <input type="checkbox" name="M" id="M" class="itemForm">
+                    <label for="M">Masculino</label>
+                    <br>
+                    <input type="checkbox" name="F" id="F" class="itemForm">
+                    <label for="F">Feminino</label>
+                    <br>
+                    <p>Qual(is) prova(s) o atleta vai nadar:</p>
+                    <input type="checkbox" name="prova1" id="prova1" class="itemForm">
+                    <label for="prova1">50mts livre</label>
+                    <br>
+                    <input type="checkbox" name="prova2" id="prova2" class="itemForm">
+                    <label for="prova2">100mts borboleta</label>
+                    <br>
+                    <input type="checkbox" name="prova3" id="prova3" class="itemForm">
+                    <label for="prova3">100mts costas</label>
+                    <br>
+                    <input type="checkbox" name="prova4" id="prova4" class="itemForm">
+                    <label for="prova4">100mts peito</label>
+                    <br>
+                    <input type="checkbox" name="prova5" id="prova5" class="itemForm">
+                    <label for="prova5">100mts livre</label>
+                    <br>
+                    <input type="checkbox" name="prova6" id="prova6" class="itemForm">
+                    <label for="prova6">200mts borboleta</label>
+                    <br>
+                    <input type="checkbox" name="prova7" id="prova7" class="itemForm">
+                    <label for="prova7">200mts costas</label>
+                    <br>
+                    <input type="checkbox" name="prova8" id="prova8" class="itemForm">
+                    <label for="prova8">200mts peito</label>
+                    <br>
+                    <input type="checkbox" name="prova9" id="prova9" class="itemForm">
+                    <label for="prova9">200mts livre</label>
+                    <br>
+                    <input type="checkbox" name="prova10" id="prova10" class="itemForm">
+                    <label for="prova10">200mts medley</label>
+                    <br>
+                    <input type="checkbox" name="prova11" id="prova11" class="itemForm">
+                    <label for="prova11">400mts livre</label>
+                    <br>
+                    <input type="checkbox" name="prova12" id="prova12" class="itemForm">
+                    <label for="prova12">400mts medley</label>
+                    <br>
+                    <input type="checkbox" name="prova13" id="prova13" class="itemForm">
+                    <label for="prova13">800mts livre</label>
+                    <br>
+                    <input type="checkbox" name="prova14" id="prova14" class="itemForm">
+                    <label for="prova14">1500mts livre</label>
+                    <br>
+                    <p>Dia que a inscrição foi feita:</p>
+                    <input type="date" required class="itemForm">
+                    <br>
+                    <button class="botao" type="submit">Enviar</button>
+                    <br>
+                    <button class="botao" type="reset">Reset</button>
+                </form>
+            </div>  
+        </div>
+        <div id="rodape">
+            <div id="infos">
+                <p>Site criado pelo aluno Ricardo Teixeira, estudante do curso de Analise e 
+                    Desenvolvimento de sistemas no IFSP campus São Carlos.
+                </p>
+            </div>
+            <div id="paginas">
+                <ul id="listaRoda">
+                    <li class="rodaitem"><a href="pfpg1.html">Home</a></li>
+                    <li class="rodaitem"><a href="pfpg2.html">História</a></li>
+                    <li class="rodaitem"><a href="pfpg3.html">Inscrição</a></li>                  
+                </ul>
+            </div>
+            <div id="imgroda">
+                <a href="pfpg1.html"><img id="logoroda" src="nataçao-rio2016.png" alt=""></a>
+            </div>
+        </div>
+    </body>
+</html>

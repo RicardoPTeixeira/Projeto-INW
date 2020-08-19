@@ -1,0 +1,271 @@
+<!--Ricardo Peres Teixeira Ponciano - SC3011488-->
+<!--Essa pagina consiste na pagina principal do site, mostra algumas informações e tem links para acessar as outras 2 paginas-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Natação</title>
+        <link rel="icon" href="nataçao-rio2016.png">
+        <style>
+            #topo {
+                background-color:lightblue;
+                height: auto;
+            }
+            #logo {
+                width: 250px;
+                margin-left: 18px;
+                height: auto;
+            }
+            #navbar {
+                background-color: lightseagreen;
+            }
+            #listaNav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:rgba(29, 32, 207, 0.685);
+            }
+            .navitem {  
+                display: inline-block;
+                padding: 14px 16px;
+                background-color: rgb(63, 66, 207);
+                border-right: 1px solid #bbb;
+            }
+            .navitem a {   
+                color: white;              
+                text-decoration: none;
+            }
+            .navitem:hover {
+                background-color: turquoise;
+            }
+            #sobre {
+                float: right;
+                border-right: none ;
+                border-left: 1px solid #bbb;
+            }
+            #rodape {
+                background-color: lightseagreen;
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                align-items: center;
+            }
+            #infos {
+                width: 45%;
+                margin-left: 10px;
+            }
+            #paginas {
+                width: 45%;
+                justify-content: center;
+            }
+            #listaRoda {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:lightseagreen
+            }
+            .rodaitem {
+                display: inline-block;
+                padding: 14px 16px;
+                background-color: lightseagreen;
+                border-right: 1px solid #bbb;
+            }
+            .rodaitem a {
+                color: white;
+                text-decoration: none;
+            }
+            #imgroda {
+                width: 10%;
+                justify-content: right;
+            }
+            #logoroda {
+                height: 80px;
+                width: auto;
+            }
+            #corpo0 {
+                height: auto;
+                background-color: lightblue;
+            }
+            #titulo {
+                text-align: center;
+            }
+            #corpo {
+                height: auto;
+                background-color: lightblue;
+                display: flex;
+                flex-direction: row;
+                font-size: large;
+            }
+            #parte1C {
+                width: 50%;
+                margin-left: 10px;
+            }
+            #parte2C {
+                width: 50%;
+                margin-right: 10px;
+            }
+            .imgEst {
+                height: auto;
+                width: 550px;
+                align-content: center;
+            }
+            #tabelaProvas {
+                align-content: center;
+                text-align: center;
+            }
+            thead {
+                background-color: lightseagreen;
+                color: white;
+            }
+            .metragem {
+                background-color: lightseagreen;
+                color: white;
+            }
+            .video {
+                width: 490px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="topo">
+            <div id="imgTopo">
+                <a href="pfpg1.html"><img id="logo" src="nataçao-rio2016.png" alt="Logo"></a>
+            </div>
+            <nav id="navbar">
+                <ul id="listaNav">
+                    <li class="navitem"><a href="pfpg1.html">Home</a></li>
+                    <li class="navitem"><a href="pfpg2.html">História</a></li>
+                    <li class="navitem"><a href="pfpg3.html">Inscrição</a></li>
+                    <li class="navitem" id="sobre"><a href="#rodape">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id='corpo0'>
+            <h2 id="titulo">Tudo que você precisa saber sobre natação em um único site.</h2>
+        </div>
+        <div id="corpo">
+            <div id="parte1C">
+                <p>Primeiramente, vamos saber quais são os estilos da natação.</p>
+                <ol>
+                    <li>
+                        Borboleta:
+                        <img src="borbo.jpg" alt="Borboleta" class="imgEst">
+                    </li>
+                    <li>
+                        Costas:
+                        <img src="costas.jpg" alt="Costas" class="imgEst">
+                    </li>
+                    <li>
+                        Peito: 
+                        <img src="peito.jpg" alt="Peito" class="imgEst">
+                    </li>
+                    <li>
+                        Crawl/Livre:
+                        <img src="crawl.jpg" alt="Livre" class="imgEst">
+                    </li>
+                    <li>
+                        Medley (Uma única prova com todos os estilos, na ordem em que aparece na lista)
+                    </li>
+                </ol>
+            </div>
+            <div id="parte2C">
+                <p>Tabela de provas individuais das Olimpiadas de Tóquio.</p>
+                <table id="tabelaProvas">
+                    <thead>
+                        <tr>
+                            <td>X</td>
+                            <td>Borboleta</td>
+                            <td>Costas</td>
+                            <td>Peito</td>
+                            <td>Crawl/Livre</td>
+                            <td>Medley</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="metragem">50mts</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td class="metragem">100mts</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td class="metragem">200mts</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td class="metragem">400mts</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td class="metragem">800</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td class="metragem">1500</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Não</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>A prova de 800 metros livre só era disputada por mulheres, em Tóquio será a primeira vez em que homens também 
+                    concorrerão por medalhas nesta prova e a prova de 1500 livre só era disputada por homens e em Tóquio será a 
+                    primerira vez que mulheres concorrerão por medalhas nesta prova.
+                </p>
+                <p>Além das prova individuais existem os revezamentos, que consiste em 4 nadadores diferentes da mesma nacionalidade 
+                    nadando em uma mesma prova. Cada atleta nada a metragem correspondente da prova e ao completar o próximo atleta pula na água. 
+                    As provas de revezamento são: 4x100 livre masculino e feminino, 4x100 medley masculino e feminino, 4x200 livre
+                    masculino e feminino e a novidade em Tóquio, 4x100 medley misto(2 homens e 2 mulheres).
+                </p>
+                <video controls class="video">
+                    <source src="Video1.mp4" type="video/mp4"> 
+                </video>
+                <h6>Video de dicas dos 4 estilos</h6>
+            </div>
+        </div>
+        <div id="rodape">
+            <div id="infos">
+                <p>Site criado pelo aluno Ricardo Teixeira, estudante do curso de Analise e 
+                    Desenvolvimento de sistemas no IFSP campus São Carlos.
+                </p>
+            </div>
+            <div id="paginas">
+                <ul id="listaRoda">
+                    <li class="rodaitem"><a href="pfpg1.html">Home</a></li>
+                    <li class="rodaitem"><a href="pfpg2.html">História</a></li>
+                    <li class="rodaitem"><a href="pfpg3.html">Inscrição</a></li>                  
+                </ul>
+            </div>
+            <div id="imgroda">
+                <a href="pfpg1.html"><img id="logoroda" src="nataçao-rio2016.png" alt="Logo"></a>
+            </div>
+        </div>
+    </body>
+</html>
